@@ -80,7 +80,8 @@ describe('Queue', function() {
       myQueue.dequeue().should.equal('a');
     });
     it('Peek should return null if no items are in the queue', function() {
-      myQueue.peek().should.equal(null);
+      var item = myQueue.peek();
+      should.equal(item, null);
     });
   });
 });
